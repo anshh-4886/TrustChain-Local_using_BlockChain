@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Customers | TrustChain Local</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">TrustChain Local</div>
+    <nav class="side-nav">
+      <a class="nav-link" href="dashboard.html">🏠 Dashboard</a>
+      <a class="nav-link active" href="customers.html">👥 Customers</a>
+      <a class="nav-link" href="ledger.html">📒 Ledger</a>
+      <a class="nav-link" href="trustscore.html">⭐ Trust Score</a>
+      <a class="nav-link" href="loan.html">💳 Loan Profile</a>
+    </nav>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="page-title">Customers</h1>
+        <p class="page-subtitle">Manage your customers and contact details.</p>
+      </div>
+      <div class="topbar-right">
+        <button class="btn" id="openAddCustomer">+ Add Customer</button>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <div class="section-card-head">
+        <h2>Customer List</h2>
+        <p>Stored locally for demo (later connect to backend)</p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Phone</th>
+              <th>Notes</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="customerTable"></tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" id="miniModal">
+    <div class="modal">
+      <button class="modal-close" id="miniClose">✕</button>
+      <h2 class="modal-title" id="miniTitle">Add Customer</h2>
+      <div id="miniBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

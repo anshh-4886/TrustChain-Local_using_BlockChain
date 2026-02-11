@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TrustChain Local</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="landing">
+  <header class="navbar">
+    <div class="logo">TrustChain Local</div>
+    <nav class="navlinks">
+      <a href="#problem">Problem</a>
+      <a href="#solution">Solution</a>
+      <a href="#score">Trust Score</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn ghost" id="openSignInBtn">Sign In</a>
+      <a href="#" class="btn primary" id="openModalBtn">Get Started</a>
+    </div>
+  </header>
+  <section class="hero hero-landing">
+    <div class="hero-inner">
+      <span class="pill">Digital Trust • UPI + Cash • Udhaar Ledger</span>
+      <h1>Turn Udhaar into Digital Trust 💳</h1>
+      <p>
+        Track UPI + cash, manage udhaar, build a Trust Score, and unlock loan readiness for MSMEs.
+      </p>
+      <div class="hero-cta">
+        <a href="#" class="btn primary big" id="openModalBtn2">Join Beta</a>
+        <a href="dashboard.html" class="btn ghost big" id="goDashboardBtn">Open Demo Dashboard</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">82%</div>
+          <div class="stat-label">Sample Trust Score</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">₹12k</div>
+          <div class="stat-label">Pending Udhaar (demo)</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">UPI+Cash</div>
+          <div class="stat-label">Unified Records</div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="problem">
+    <div class="section-head">
+      <h2 class="section-title">The Problem</h2>
+      <p class="section-sub">Informal credit breaks trust. Data scattered = no loan access.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Untracked Udhaar</h3>
+        <p>Manual credit leads to forgotten payments and losses.</p>
+      </div>
+      <div class="card">
+        <h3>No Credit History</h3>
+        <p>Small vendors remain invisible to banks & fintechs.</p>
+      </div>
+      <div class="card">
+        <h3>Scattered Data</h3>
+        <p>Cash + UPI is never combined for insights.</p>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="solution">
+    <div class="section-head">
+      <h2 class="section-title">Our Solution</h2>
+      <p class="section-sub">A smart ledger + reminders + trust score to make vendors loan-ready.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Smart Ledger</h3>
+        <p>Track UPI + cash sales + udhaar in one place.</p>
+      </div>
+      <div class="card">
+        <h3>Credit Reminders</h3>
+        <p>Due dates, pending list, and auto follow-ups.</p>
+      </div>
+      <div class="card">
+        <h3>Trust Score</h3>
+        <p>Repayment + revenue stability → trust rating.</p>
+      </div>
+    </div>
+
+    <div class="cta-strip">
+      <div>
+        <h3>Try the working MVP demo</h3>
+        <p>Customers, udhaar ledger, trust score, loan profile — all pages ready.</p>
+      </div>
+      <a href="dashboard.html" class="btn primary">Open Dashboard</a>
+    </div>
+  </section>
+  <section class="section" id="score">
+    <div class="section-head">
+      <h2 class="section-title">Digital Trust Score</h2>
+      <p class="section-sub">Built using repayment behavior, revenue stability and consistency.</p>
+    </div>
+
+    <div class="trust-box">
+      <div>
+        <h3>Vendor Trust Rating</h3>
+        <p>Transparent breakdown for lenders & MSME growth.</p>
+        <div class="mini-badges">
+          <span class="badge">Repayment Rate</span>
+          <span class="badge">Delay Days</span>
+          <span class="badge">Sales Stability</span>
+        </div>
+      </div>
+      <div class="score">82%</div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <h2 class="section-title">Powering the Digital Economy</h2>
+      <p class="section-sub">Informal → formal, credit identity, micro-loans, inclusion.</p>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Financial Inclusion</h3>
+        <p>Bring informal businesses into the formal system.</p>
+      </div>
+      <div class="card">
+        <h3>Micro Loans</h3>
+        <p>Enable instant, low-risk lending.</p>
+      </div>
+      <div class="card">
+        <h3>Growth Insights</h3>
+        <p>Data-driven decisions for small vendors.</p>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div>
+      <h3>TrustChain Local</h3>
+      <p>Digitizing trust for millions of small businesses.</p>
+    </div>
+    <div class="footer-actions">
+      <a href="#" class="btn ghost" id="openSignInBtn2">Sign In</a>
+      <a href="#" class="btn primary" id="openModalBtn3">Join the Beta</a>
+    </div>
+  </footer>
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeModalBtn" aria-label="Close modal">✕</button>
+
+      <h2 class="modal-title" id="modalTitle">Welcome to TrustChain Local</h2>
+      <p class="modal-subtitle">Create account or sign in to start using the MVP demo.</p>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="signup">Get Started</button>
+        <button class="tab-btn" data-tab="signin">Sign In</button>
+      </div>
+      <form class="tab-content active" id="signupForm" data-content="signup">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>Owner Name *</label>
+            <input type="text" name="ownerName" placeholder="e.g. Ramesh Kumar" required />
+          </div>
+
+          <div class="form-group">
+            <label>Mobile Number *</label>
+            <input type="tel" name="mobile" placeholder="e.g. 9876543210" required />
+          </div>
+
+          <div class="form-group">
+            <label>Business Type *</label>
+            <select name="businessType" required>
+              <option value="">Select</option>
+              <option>Kirana / Grocery</option>
+              <option>Pharmacy</option>
+              <option>Food Stall / Restaurant</option>
+              <option>Salon</option>
+              <option>Freelancer</option>
+              <option>Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>City *</label>
+            <input type="text" name="city" placeholder="e.g. Vellore" required />
+          </div>
+
+          <div class="form-group">
+            <label>UPI ID (optional)</label>
+            <input type="text" name="upi" placeholder="e.g. shop@upi" />
+          </div>
+
+          <div class="form-group">
+            <label>Avg Daily Sales (₹)</label>
+            <input type="number" name="dailySales" placeholder="e.g. 5000" min="0" />
+          </div>
+
+          <div class="form-group">
+            <label>Do you give Udhaar? *</label>
+            <select name="udhaar" required>
+              <option value="">Select</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label>Approx Pending Udhaar (₹)</label>
+            <input type="number" name="pendingUdhaar" placeholder="e.g. 12000" min="0" />
+          </div>
+
+          <div class="form-group full">
+            <label>Create Password *</label>
+            <input type="password" name="password" placeholder="Minimum 6 characters" minlength="6" required />
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn">Create Account</button>
+        <p class="form-hint">Demo stores data locally (hackathon mode). Backend later.</p>
+        <div class="form-message" id="signupMessage"></div>
+      </form>
+      <form class="tab-content" id="signinForm" data-content="signin">
+        <div class="form-grid">
+          <div class="form-group full">
+            <label>Mobile / Email *</label>
+            <input type="text" name="login" placeholder="e.g. 9876543210" required />
+          </div>
+          <div class="form-group full">
+            <label>Password *</label>
+            <input type="password" name="loginPassword" placeholder="Enter your password" required />
+          </div>
+        </div>
+
+        <button type="submit" class="primary-btn">Sign In</button>
+        <div class="form-message" id="signinMessage"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trust Score | TrustChain Local</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">TrustChain Local</div>
+    <nav class="side-nav">
+      <a class="nav-link" href="dashboard.html">🏠 Dashboard</a>
+      <a class="nav-link" href="customers.html">👥 Customers</a>
+      <a class="nav-link" href="ledger.html">📒 Ledger</a>
+      <a class="nav-link active" href="trustscore.html">⭐ Trust Score</a>
+      <a class="nav-link" href="loan.html">💳 Loan Profile</a>
+    </nav>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="page-title">Trust Score</h1>
+        <p class="page-subtitle">Your digital trust rating based on behavior & stability.</p>
+      </div>
+      <div class="topbar-right">
+        <button class="btn" id="recomputeScore">Recompute</button>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <div class="score-hero">
+        <div>
+          <div class="score-big" id="scoreBig">--</div>
+          <div class="score-tag" id="scoreTag">No data</div>
+        </div>
+        <div class="score-break">
+          <div class="break-item">
+            <span>Repayment Rate</span>
+            <b id="brRepay">--%</b>
+          </div>
+          <div class="break-item">
+            <span>Revenue Stability</span>
+            <b id="brStability">--%</b>
+          </div>
+          <div class="break-item">
+            <span>Pending Udhaar Ratio</span>
+            <b id="brDebt">--%</b>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-card-head">
+        <h2>How we calculate</h2>
+        <p>Rule-based for hackathon demo (upgradeable to ML)</p>
+      </div>
+
+      <ul class="bullets">
+        <li>On-time repayment increases score.</li>
+        <li>Stable daily revenue increases score.</li>
+        <li>Very high pending udhaar reduces score.</li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

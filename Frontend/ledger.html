@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ledger | TrustChain Local</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">TrustChain Local</div>
+    <nav class="side-nav">
+      <a class="nav-link" href="dashboard.html">🏠 Dashboard</a>
+      <a class="nav-link" href="customers.html">👥 Customers</a>
+      <a class="nav-link active" href="ledger.html">📒 Ledger</a>
+      <a class="nav-link" href="trustscore.html">⭐ Trust Score</a>
+      <a class="nav-link" href="loan.html">💳 Loan Profile</a>
+    </nav>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="page-title">Ledger</h1>
+        <p class="page-subtitle">Add Udhaar, mark payments, and track pending credits.</p>
+      </div>
+      <div class="topbar-right">
+        <button class="btn" id="openAddCredit">+ Add Udhaar</button>
+        <button class="btn btn-outline" id="openAddSale">+ Add Sale</button>
+      </div>
+    </header>
+
+    <section class="grid-2">
+      <div class="section-card">
+        <div class="section-card-head">
+          <h2>Udhaar Entries</h2>
+          <p>Track credit and payments</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Customer</th>
+                <th>Amount</th>
+                <th>Due</th>
+                <th>Status</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="creditTable"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-card">
+        <div class="section-card-head">
+          <h2>Sales Entries</h2>
+          <p>Cash + UPI sales tracking</p>
+        </div>
+
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Mode</th>
+                <th>Amount</th>
+              </tr>
+            </thead>
+            <tbody id="salesTable"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="modal-overlay" id="miniModal">
+    <div class="modal">
+      <button class="modal-close" id="miniClose">✕</button>
+      <h2 class="modal-title" id="miniTitle">Action</h2>
+      <div id="miniBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

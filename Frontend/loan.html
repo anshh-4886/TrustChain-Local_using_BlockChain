@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Profile | TrustChain Local</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="app-body">
+
+  <aside class="sidebar">
+    <div class="sidebar-brand">TrustChain Local</div>
+    <nav class="side-nav">
+      <a class="nav-link" href="dashboard.html">🏠 Dashboard</a>
+      <a class="nav-link" href="customers.html">👥 Customers</a>
+      <a class="nav-link" href="ledger.html">📒 Ledger</a>
+      <a class="nav-link" href="trustscore.html">⭐ Trust Score</a>
+      <a class="nav-link active" href="loan.html">💳 Loan Profile</a>
+    </nav>
+    <button class="logout-btn" id="logoutBtn">Logout</button>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div>
+        <h1 class="page-title">Loan Profile</h1>
+        <p class="page-subtitle">Lender-ready summary for micro-loans & fintech partners.</p>
+      </div>
+      <div class="topbar-right">
+        <button class="btn" id="downloadLoan">Download (Demo)</button>
+      </div>
+    </header>
+
+    <section class="section-card">
+      <div class="loan-grid">
+        <div class="loan-box">
+          <h3>Vendor</h3>
+          <p id="loanVendor">--</p>
+        </div>
+        <div class="loan-box">
+          <h3>Trust Score</h3>
+          <p id="loanScore">--</p>
+        </div>
+        <div class="loan-box">
+          <h3>Monthly Revenue (Est.)</h3>
+          <p id="loanRevenue">₹0</p>
+        </div>
+        <div class="loan-box">
+          <h3>Pending Udhaar</h3>
+          <p id="loanPending">₹0</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-card">
+      <div class="section-card-head">
+        <h2>Recommendation</h2>
+        <p id="loanReco">--</p>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
